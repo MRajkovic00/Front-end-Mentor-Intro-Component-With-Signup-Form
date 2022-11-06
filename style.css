@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.attribution { font-size: 20px; text-align: center;  }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * {
+        
+        box-sizing: border-box;
+      }
+
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: url(images/bg-intro-desktop.png);
+   background-size: cover;
+   min-height: 1050px;
+   background-color: var(--red);
+   padding: 20px;
+   margin:20px;
+   font-family: "Poppins", sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.container1{
+    display: flex;
+    width:700px;
+    height: 500px;
+    flex-direction: column;
+    
+    padding: 10px;
+    margin:20px;
+    margin-top: 200px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+
+    width:700px;
+    height: 800px;
+    padding: 20px;
+    margin:20px;
+}
+
+/*Text*/
+
+.title{
+    color:#fff;
+    font-size: 3.5rem;
+}
+
+.text1{
+   font-size: 1.2rem;
+   color:#fff;
+}
+
+.text1::after{
+    content:'';
+ clear:both;
+ display:block;
+
+}
+
+/*Content before form*/
+
+.trial{
+    background-color: var(--blue);
+    font-weight: 400;
+    color:white;
+    height: 70px;
+    width:650px;
+    border-radius: 10px;
+    padding: 10px;
+text-align: center;
+align-items: center;
+}
+
+.trial-text{
+    color:white;
+    font-size:1.1rem ;
+    font-weight: 100;
+}
+
+.try{
+    color:white;
+    font-weight: 700;
+}
+
+/*Form*/
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    width:650px;
+    height: 600px;
+    margin-top: 30px;
+    padding: 15px;
+    align-items: center;
+}
+
+.inputBox{
+    width:575px;
+    height: 65px;
+    padding-left: 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:black;
+    word-spacing: 1px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    margin-right: 50px;
+    font-family: "Poppins", sans-serif;
+}
+input::placeholder {
+    font-weight: 700;
+  }
+/*Button*/
+
+.btn{
+    margin-top: 40px;
+    border-radius: 8px;
+    width:575px;
+    height: 65px;
+    background-color: var(--green);
+    color:#fff;
+    border:none;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+}
+
+.text2{
+    color:var(--grayish-blue);
+    font-size: 0.9rem;
+}
+
+.terms{
+    color:var(--red);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*Active states*/
+
+.btn:hover{
+    opacity:0.8;
+}
+
+/*Error*/
+
+.error{
+    color: var(--red);
+    font-style: italic;
+    text-align: end;
+    font-size: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.err {
+    background-image: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    border:3px solid var(--red);
+    background-position: 95% 50%;
+    color: var(--red);
+    outline: none;
+    font-weight: 600;
+  }
+
+  @media (max-width:375px) {
+       
+    main{
+      
+        flex-direction:column;
+    }
+    body{
+       
+        background-image: url(images/bg-intro-mobile.png);
+        
+     }
+
+  
+    .container1{
+      justify-content: center;
+      align-items: center;
+        width:300px;
+        height: 500px;
+        margin-top: 1px;
+        text-align: center;
+        padding: 0;
+        margin:0
+    }
+    
+    .container2{
+        justify-content: center;
+        align-items: center;
+        width:300px;
+        height: 500px;
+        margin:0;
+    }
+
+    /*Text*/
+    .title{
+        font-size:1.8rem;
+    }
+    .text1{
+        font-size: 1rem;
+         padding: 0;
+    }
+    
+    /*Form*/
+    .loginForm{
+       
+        width:350px;
+        height: 500px;
+        margin-top: 30px;
+        padding: 15px;
+       
+    }
+    
+    .inputBox{
+        width:575px;
+        height: 65px;
+        padding-left: 30px;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color:black;
+        word-spacing: 1px;
+        margin-top: 18px;
+        margin-bottom: 12px;
+        margin-right: 50px;
+       
+    }
+
+   /*Trial*/
+   .trial{
+    height: 140px;
+    width:350px;
+   padding:30px;
+}
+
+.trial::after{
+    content:'';
+ clear:both;
+ display:block;
+}
+
+.trial-text{
+    
+    font-size:1.2rem ;
+   
+    
+}
+
+.try{
+    color:white;
+    font-weight: 700;
+}
+
+
+   /*Input box*/
+
+   .inputBox{
+    width:325px;
+    height: 60px;
+    padding-left: 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 15px;
+    border-radius: 5px;
+    width:325px;
+    height: 70px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    
+}
+.text2{
+     text-align: center;
+    font-size: 0.76rem;
+}
+
+
+.attribution { font-size: 15px; text-align: center;  padding: 80px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  }
